@@ -4,18 +4,7 @@
     url("./asset/fonts/THUNDER/Fonts/Web-TT/Thunder-BlackLC.ttf") format("opentype");
 
     }
-    /* @font-face {
-        font-family: "CustomFont";
-        src: url("https://yoursite.com/css/fonts/CustomFont.eot");
-        src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
-        url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
-        url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
-        } */
-
-
-
-
-
+  
 
 body{
     margin: 0;
@@ -51,6 +40,7 @@ h1{
 h1 span{
     margin-left: -80px;
 }
+
 .bigLove{
 color: #FF0000;
 }
@@ -58,12 +48,12 @@ color: #FF0000;
 button{
     background:  #FF0000;
     color: #FFF;
-    border-radius: 20px;
+    border-radius: 10px;
+    margin-left: 30px;
     width: 160px;
     height: 41px;
     border: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
+    font-size: 14px;
 }
 
 header button:hover{
@@ -72,14 +62,8 @@ header button:hover{
 
 
 .logo{
-    width: 75px;
-    height: 75px;
-    margin: 5px;
-    border: 1px solid black;
-    background: black;
-    color: white;
-   
-    
+    margin: 15px; 
+    object-fit: contain;
 }
 
 .header--top{
@@ -88,11 +72,9 @@ header button:hover{
     height: 85px;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid blue;
+ 
     
 }
-
-  
 
 .header--top nav{
     display: flex;
@@ -102,36 +84,68 @@ header button:hover{
     flex-flow: row nowrap;
     width: 140px;
     margin: 5px;
-    border: 1px solid black;
+   
 }
 
 nav p{
     font-family: "thunder";
     color: #AF0032;
     font-size: 32px;
+    line-height: 28px;
+    margin-left: 30px;
+    margin-bottom: 20px;
     
-
 }
 
-.header--top i{
-    color: #fff;
-    margin-right: 1px;
-   
+.header__nav img{
+    margin-bottom: 20px;
 }
 
-.header--top--backgroundList{
-    
-    margin: 5px;
-    display: flex;
-    align-self: flex-start;
-    background: #AF0032;
+.header__nav img:hover{
+    cursor: pointer;
+}
+
+
+.heart {
+    background-color: red;
+    display: inline-block;
     height: 30px;
+    margin: 0 10px 100px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
     width: 30px;
-    border-radius: 50%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-    
+  }
 
+.heart:before,
+.heart:after {
+content: "";
+background-color: red;
+border-radius: 50%;
+height: 30px;
+position: absolute;
+width: 30px;
+}
+
+.heart:before {
+top: -15px;
+left: 0;
+}
+
+.heart:after {
+left: 15px;
+top: 0;
+}
+
+.pilot{
+
+position: absolute;
+height: 300px;
+left: 170px;
+top: 270.82px;
+transform: rotate(-15.62deg);
+}
+
+.stars{
+   
 }
