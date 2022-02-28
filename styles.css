@@ -6,7 +6,7 @@
     }
   
 
-body{
+*{
     margin: 0;
     overflow-x: none;
 }
@@ -137,15 +137,20 @@ left: 15px;
 top: 0;
 }
 
+.heartContainer{
+    transform: rotate(30deg);
+    margin-top: 80px;
+}
 .pilot{
 
 position: absolute;
-height: 300px;
-left: 170px;
-top: 270.82px;
+height: 270px;
+left: 172px;
+top: 275px;
 transform: rotate(-15.62deg);
 }
 
 .stars{
    
 }
+
