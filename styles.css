@@ -8,14 +8,18 @@
 
 *{
     margin: 0;
-    overflow-y: none;
+    
 }
 header{
-   
+    
     background: #FFAF96;
     height: 618px;
     width: 100%;
-    
+    overflow-x: hidden;
+ 
+}
+body{
+    overflow-x: hidden;
 }
 
 header  ul{
@@ -34,6 +38,7 @@ h1{
     color: #AF0032;
     margin-left: 100px;
     margin-top: 50px;
+    
 }
 
 h1 span{
@@ -70,6 +75,10 @@ color: #FF0000;
     margin: 5px;
    
 }
+.header__nav :hover{
+    transform: scale(1.1)
+}
+
 
 .header--block{
     display: flex;
@@ -100,8 +109,8 @@ nav p{
 
 
 .heartContainer{
-    transform: rotate(30deg);
-    margin: 265px 90px 0 0;
+    transform: rotate(-10deg);
+    margin: 275px 22px 0 0;
     position: absolute;
 }
 
@@ -112,23 +121,27 @@ nav p{
     margin: 0 10px 100px;
     position: relative;
     top: 0;
-    transform: rotate(-45deg);
+    /*transform: rotate(-45deg); */
     width: 40px;
-  }
+    animation: pulse 2s infinite;
+    
+}
 
 .heart:before,
 .heart:after {
-content: "";
-background-color: #FF0000;
-border-radius: 50%;
-height: 40px;
-position: absolute;
-width: 40px;
+    content: "";
+    background-color: #FF0000;
+    border-radius: 50%;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+    animation: pulse 2s infinite;
 }
 
 .heart:before {
 top: -20px;
 left: 0;
+
 }
 
 .heart:after {
@@ -359,7 +372,7 @@ header button:hover{
     font-weight: 800;
     font-size: 175px;
     letter-spacing: 0px;
-    margin: -300px 0 0 0;
+    margin: -285px 0 0 0;
 }
 
 .heart--white__1{
@@ -373,4 +386,8 @@ header button:hover{
 
 .container2__block--2--1:hover{
     cursor: pointer;
+}
+
+@keyframes pulse {
+    10%{transform: scale(1.03)}
 }
