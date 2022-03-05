@@ -8,10 +8,10 @@
 
 *{
     margin: 0;
-    overflow-x: none;
+    overflow-y: none;
 }
 header{
-    position: absolute;
+   
     background: #FFAF96;
     height: 618px;
     width: 100%;
@@ -19,10 +19,8 @@ header{
 }
 
 header  ul{
-    display: none
+    display: none;
 }
-
-
 
 h1{
     display: flex;
@@ -34,35 +32,21 @@ h1{
     font-weight: 700;
     line-height: 66px;
     color: #AF0032;
-    margin-left: 110px;
+    margin-left: 100px;
+    margin-top: 50px;
 }
 
 h1 span{
-    margin-left: -80px;
+    margin-left: -100px;
 }
 
 .bigLove{
 color: #FF0000;
 }
 
-button{
-    background:  #FF0000;
-    color: #FFF;
-    border-radius: 10px;
-    margin-left: 30px;
-    width: 160px;
-    height: 41px;
-    border: none;
-    font-size: 14px;
-}
-
-header button:hover{
-    cursor: pointer;
-}
-
-
 .logo{
-    margin: 15px; 
+    margin: 15px;
+    margin-top: 30px; 
     object-fit: contain;
 }
 
@@ -87,18 +71,27 @@ header button:hover{
    
 }
 
+.header--block{
+    display: flex;
+    justify-content: center;
+}
+
+
 nav p{
     font-family: "thunder";
     color: #AF0032;
     font-size: 32px;
+    font-weight: 500;
     line-height: 28px;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-bottom: 20px;
-    
+    margin-top: 40px;
+    letter-spacing: 0.05em;    
 }
 
 .header__nav img{
     margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 .header__nav img:hover{
@@ -106,51 +99,278 @@ nav p{
 }
 
 
+.heartContainer{
+    transform: rotate(30deg);
+    margin: 265px 90px 0 0;
+    position: absolute;
+}
+
 .heart {
-    background-color: red;
+    background-color: #FF0000;
     display: inline-block;
-    height: 30px;
+    height: 40px;
     margin: 0 10px 100px;
     position: relative;
     top: 0;
     transform: rotate(-45deg);
-    width: 30px;
+    width: 40px;
   }
 
 .heart:before,
 .heart:after {
 content: "";
-background-color: red;
+background-color: #FF0000;
 border-radius: 50%;
-height: 30px;
+height: 40px;
 position: absolute;
-width: 30px;
+width: 40px;
 }
 
 .heart:before {
-top: -15px;
+top: -20px;
 left: 0;
 }
 
 .heart:after {
-left: 15px;
+left: 20px;
 top: 0;
 }
 
-.heartContainer{
-    transform: rotate(30deg);
-    margin-top: 80px;
-}
 .pilot{
 
 position: absolute;
 height: 270px;
-left: 172px;
-top: 275px;
+margin-top: 195px;
+margin-left: 235px;
 transform: rotate(-15.62deg);
 }
 
 .stars{
-   
+   position: absolute;
 }
 
+.star1{
+    margin: 20px 150px 0 0;
+}
+.star2{
+    margin: 55px 195px 0 0;
+    height: 26px;
+    width: 26px;
+}
+.star3{
+  margin: 140px 0 0 300px;
+}
+.star4{
+    margin: 277px 85px 0 0;
+    height: 36px;
+}
+
+
+button{
+    
+    position: absolute;
+    background:  #FF0000;
+    color: #FFF;
+    border-radius: 12px;
+    margin: 335px 135px 0 0;
+    width: 165px;
+    height: 41px;
+    border: none;
+    font-size: 16px;
+    /* need to be change to Landry Gothic*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: 500;
+    letter-spacing: 0.06em;
+}
+
+header button:hover{
+    cursor: pointer;
+}
+
+/*Container1*/
+
+.container1{
+   
+    background: #E6DEF7 ;
+    height: 623px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+}
+
+.container1 img{
+    position:absolute;
+    z-index: 1!important;
+    height: 201px;
+    
+}
+.container1 p{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    width: 75%;
+    color:#AF0032;
+    text-align: center;
+    line-height: 24px;
+    margin: -60px 0 0 0;
+}
+
+.block{
+   
+    margin: 0 10%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart--white__container{
+    display: absolute;
+    transform: rotate(-15deg);
+    margin: 110px 0 0 50px;
+}
+
+.heart--white {
+    background-color: #FFF;
+    display: inline-block;
+    height: 160px;
+    margin: 0 10px 100px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 160px;
+  }
+
+.heart--white:before,
+.heart--white:after {
+    content: "";
+    background-color: #FFF;
+    border-radius: 50%;
+    height: 160px;
+    position: absolute;
+    width: 160px;
+}
+
+.heart--white:before {
+    top: -80px;
+    left: 0;
+}
+
+.heart--white:after {
+    left: 80px;
+    top: 0;
+}
+
+.container2{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container2 .giantBear{
+    height:500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container2 .productBear{
+    height: 250px!important;
+    object-fit: cover;
+    width: 100%;
+}
+
+.container2 .girlandBear{
+    height: 250px!important;
+    object-fit: cover;
+    width: 100%;
+    margin-top: -4px;
+}
+.container2__block--1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hugme{
+    position: absolute;
+    margin: 0 250px 320px 0px;
+    
+}
+.hugme img{
+    position: absolute;
+   
+}
+.hugme p{
+    position: absolute;
+    color: #9679D4;
+    font-size: 23px;
+    line-height: 24px;
+    font-family: "thunder";
+    font-weight: 500;
+    width: 70px;
+    text-align: center;
+    margin: 30px 0 0 50px;   
+    letter-spacing: 0.05em;    
+    
+};
+
+.container2__block--2--1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 14px;
+}
+
+
+.container2__block--2 p{
+    position: absolute;
+    color: #FFF;
+    font-size: 37px;
+    font-family: "thunder";
+    text-align: center;
+    width: 100%;
+    margin-top: -145px;
+    letter-spacing: 0.06em;
+}
+.container2__block--2--1:hover + .animationGo{
+   color:#9679D4;
+}
+
+.animationGo{
+    display: flex;
+    object-fit: contain;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    z-index: 10;
+    transform : scale(0);
+    transition: transform 200ms ease-in;
+}
+
+.animationGo p{
+    position: absolute;
+    color: #FF0000;
+    font-family: "thunder";
+    font-weight: 800;
+    font-size: 175px;
+    letter-spacing: 0px;
+    margin: -300px 0 0 0;
+}
+
+.heart--white__1{
+    transform: rotate(-20deg);
+    margin: 150px -50px 0 0;
+}
+
+.container2__block--2--1:hover  .animationGo {
+    transform : scale(1);
+}
+
+.container2__block--2--1:hover{
+    cursor: pointer;
+}
