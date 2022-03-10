@@ -10,39 +10,23 @@
     margin: 0;
     
 }
+html,
+header,
+body {
+  overflow-x: hidden;
+}
 header{
-    
+   
     background: #FFAF96;
     height: 618px;
     width: 100%;
-    overflow-x: hidden;
- 
-}
-body{
-    overflow-x: hidden;
-}
-
-header  ul{
-    display: none;
-}
-
-h1{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    font-family: "thunder";
-    font-style: normal;
-    font-size: 72px;
-    font-weight: 700;
-    line-height: 66px;
-    color: #AF0032;
-    margin-left: 100px;
-    margin-top: 50px;
+   
     
 }
 
-h1 span{
-    margin-left: -100px;
+
+header  ul{
+    display: none;
 }
 
 .bigLove{
@@ -61,6 +45,7 @@ color: #FF0000;
     height: 85px;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
  
     
 }
@@ -80,11 +65,6 @@ color: #FF0000;
 }
 
 
-.header--block{
-    display: flex;
-    justify-content: center;
-}
-
 
 nav p{
     font-family: "thunder";
@@ -95,7 +75,7 @@ nav p{
     margin-left: 10px;
     margin-bottom: 20px;
     margin-top: 40px;
-    letter-spacing: 0.05em;    
+    letter-spacing: 0.06em;    
 }
 
 .header__nav img{
@@ -107,11 +87,41 @@ nav p{
     cursor: pointer;
 }
 
+.header--container{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.header--block{
+    display: flex;
+    overflow: hidden;
+}
+
+h1{
+   
+    flex-flow: column nowrap;
+    justify-content: center;
+    font-family: "thunder";
+    font-style: normal;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 66px;
+    color: #AF0032;
+    margin: 70px 0 0 120px;
+    
+    
+}
+
+h1 span{
+    margin: 0 0 0 -100px;
+}
+
 
 .heartContainer{
     transform: rotate(-10deg);
-    margin: 275px 22px 0 0;
+    margin: 290px 0 0 135px;
     position: absolute;
+   
 }
 
 .heart {
@@ -121,21 +131,21 @@ nav p{
     margin: 0 10px 100px;
     position: relative;
     top: 0;
-    /*transform: rotate(-45deg); */
     width: 40px;
-    animation: pulse 2s infinite;
+    animation: pulse 1.5s infinite;
     
 }
 
 .heart:before,
 .heart:after {
     content: "";
-    background-color: #FF0000;
+    background-color: #ff0000;
     border-radius: 50%;
     height: 40px;
     position: absolute;
     width: 40px;
-    animation: pulse 2s infinite;
+    animation: pulse 1.5s infinite;
+    ;
 }
 
 .heart:before {
@@ -152,10 +162,10 @@ top: 0;
 .pilot{
 
 position: absolute;
-height: 270px;
-margin-top: 195px;
-margin-left: 235px;
+height: 292px;
 transform: rotate(-15.62deg);
+margin: 210px 0 0 145px;
+
 }
 
 .stars{
@@ -163,18 +173,18 @@ transform: rotate(-15.62deg);
 }
 
 .star1{
-    margin: 20px 150px 0 0;
+    margin: 42px 0 0 93px;
 }
 .star2{
-    margin: 55px 195px 0 0;
+    margin: 77px 0 0 77px;
     height: 26px;
     width: 26px;
 }
 .star3{
-  margin: 140px 0 0 300px;
+  margin: 160px 0 0 315px;
 }
 .star4{
-    margin: 277px 85px 0 0;
+    margin: 295px 0px 0 115px;
     height: 36px;
 }
 
@@ -185,14 +195,14 @@ button{
     background:  #FF0000;
     color: #FFF;
     border-radius: 12px;
-    margin: 335px 135px 0 0;
+    margin: 360px 0 0 20px;
     width: 165px;
     height: 41px;
     border: none;
     font-size: 16px;
     /* need to be change to Landry Gothic*/
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.06em;
 }
 
@@ -360,24 +370,24 @@ header button:hover{
     position: absolute;
     height: 250px;
     width: 100%;
-    z-index: 10;
+    z-index: 1;
     transform : scale(0);
     transition: transform 200ms ease-in;
 }
 
 .animationGo p{
-    position: absolute;
+   
+   
     color: #FF0000;
     font-family: "thunder";
     font-weight: 800;
     font-size: 175px;
-    letter-spacing: 0px;
-    margin: -285px 0 0 0;
+    margin: -292px 40px 0 0;
 }
 
 .heart--white__1{
     transform: rotate(-20deg);
-    margin: 150px -50px 0 0;
+    margin: 150px 0 0 70px;
 }
 
 .container2__block--2--1:hover  .animationGo {
