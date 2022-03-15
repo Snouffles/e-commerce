@@ -11,21 +11,23 @@
     
 }
 html,
-header,
 body {
-  overflow-x: hidden;
+  overflow-x: hidden!important;
+  
 }
-header{
-   
+body {
+   width: 100%;
+}
+.container{
+    
+    position: relative;
     background: #FFAF96;
     height: 618px;
-    width: 100%;
-   
     
 }
 
 
-header  ul{
+.container  ul{
     display: none;
 }
 
@@ -58,7 +60,7 @@ color: #FF0000;
     flex-flow: row nowrap;
     width: 140px;
     margin: 5px;
-   
+
 }
 .header__nav :hover{
     transform: scale(1.1)
@@ -88,13 +90,14 @@ nav p{
 }
 
 .header--container{
+    height: 100%;
     display: flex;
     justify-content: center;
-    margin: 0;
 }
 .header--block{
     display: flex;
     overflow: hidden;
+   
 }
 
 h1{
@@ -286,12 +289,14 @@ header button:hover{
 }
 
 .container2{
+    position: relative;
     height: 1000px;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 .container2 .giantBear{
+   
     height:500px;
     width: 100%;
     object-fit: cover;
@@ -301,6 +306,7 @@ header button:hover{
     height: 250px!important;
     object-fit: cover;
     width: 100%;
+    
 }
 
 .container2 .girlandBear{
@@ -339,11 +345,13 @@ header button:hover{
 };
 
 .container2__block--2--1{
+  
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-bottom: 14px;
+    margin-bottom: 0px;
+    
 }
 
 
@@ -363,11 +371,11 @@ header button:hover{
 
 .animationGo{
     display: flex;
+    position: absolute;
     object-fit: contain;
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    position: absolute;
     height: 250px;
     width: 100%;
     z-index: 1;
@@ -380,9 +388,9 @@ header button:hover{
    
     color: #FF0000;
     font-family: "thunder";
-    font-weight: 800;
-    font-size: 175px;
-    margin: -292px 40px 0 0;
+    font-weight: 500;
+    font-size: 150px;
+    margin: -270px 0 0 5px;
 }
 
 .heart--white__1{
