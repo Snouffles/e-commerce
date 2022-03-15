@@ -10,14 +10,15 @@
     margin: 0;
     
 }
-html,
+
 body {
-  overflow-x: hidden!important;
+  overflow-x: hidden;
+  height: 100%;
+    background-color: #000;
+
   
 }
-body {
-   width: 100%;
-}
+
 .container{
     
     position: relative;
@@ -408,4 +409,13 @@ header button:hover{
 
 @keyframes pulse {
     10%{transform: scale(1.03)}
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 11px;
+    height: 40px;
 }
