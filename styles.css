@@ -233,8 +233,11 @@ header button:hover{
     
 }
 .container1 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 17px;
     width: 75%;
     color:#AF0032;
@@ -304,14 +307,14 @@ header button:hover{
 }
 
 .container2 .productBear{
-    height: 250px!important;
+    height: 250px;
     object-fit: cover;
     width: 100%;
     
 }
 
 .container2 .girlandBear{
-    height: 250px!important;
+    height: 250px;
     object-fit: cover;
     width: 100%;
     margin-top: -4px;
@@ -365,12 +368,14 @@ header button:hover{
     width: 100%;
     margin-top: -145px;
     letter-spacing: 0.06em;
+   
 }
 .container2__block--2--1:hover + .animationGo{
    color:#9679D4;
 }
 
 .animationGo{
+    border: 1px solid black;
     display: flex;
     position: absolute;
     object-fit: contain;
@@ -397,6 +402,7 @@ header button:hover{
 .heart--white__1{
     transform: rotate(-20deg);
     margin: 150px 0 0 70px;
+   
 }
 
 .container2__block--2--1:hover  .animationGo {
@@ -418,4 +424,158 @@ header button:hover{
     color: white;
     font-size: 11px;
     height: 40px;
+}
+
+@media screen and (min-width:820px) {
+    
+    .container{
+        border: 1px solid blue;
+        height: 844px;
+    }
+    .header--block{
+        
+        width: 90%;
+        border: 1px solid black;
+        margin-top: 20px;
+        
+        
+    }
+
+    .header--container h1{
+       
+        font-size: 150px;
+       line-height: 120px;
+       margin: 0 0 0 30%;
+    }
+    h1 span{
+        margin: 0 0 0 -43%;
+    }
+    .pilot{
+        height: 500px;
+        margin: 110px 0 0 145px;
+        display: none;
+    }
+
+
+
+
+
+
+    .container1{
+   
+     height: 623px;
+     flex-flow: row nowrap;
+     justify-content: space-around!important;
+     width: 100% ;
+        
+    }
+    
+    .container1 img{
+      
+        height: 314px;
+        width: 288px;
+        
+    }
+    .container1 p{
+      
+        font-size: 22px;
+        line-height: 32px;
+        width: 100%;
+        height: 145px;
+        margin: 0 50px 0 -5%;
+        align-self: center;
+    }
+
+    .block{
+       
+        width: 40%;
+     
+    }
+    .heart--white{
+        height: 280px;
+        width: 280px;
+    }
+    
+    .heart--white:before,
+    .heart--white:after {
+        height: 280px;
+        width: 280px;
+    }
+    
+    .heart--white:before {
+        top: -140px;
+    }
+    
+    .heart--white:after{
+    left: 140px;
+    }
+    
+    .container2__block--1{
+        width: 50%;
+        height: 1016px;
+       
+    }
+    .container2__block--2{
+        width: 50%;
+        
+        height: 1016px;
+    }
+    .container2__block--2--1{
+        
+        display: flex;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .container2__block--2--2{
+        height: 50%;
+        
+    }
+    
+    .container2{
+        flex-wrap: wrap;
+        height: 1016px;
+    }
+
+    .container2__block--2 p{
+     margin: 0;
+     
+    }
+   
+    .heart--white__1{
+       margin: 150px 0 0 100px
+    }
+    
+    .animationGo{
+        display: flex;
+        width: 50%;
+        height: 508px;
+        justify-content: center;
+       
+    }
+    
+    .animationGo p{
+        width: 100%;
+        font-size: 302px;
+        margin: -430px 0 0 0px;
+      
+    }
+    
+    .container2 .giantBear{
+       height: 1016px;
+       margin: -6px 0 0 0;
+        
+
+    }
+    .container2 .productBear{
+        height: 508px;
+        margin:0;
+    }
+    .container2 .girlandBear{
+        height: 508px;
+        margin: -3px 0 0 0;
+    }
+    
+
+  
 }
