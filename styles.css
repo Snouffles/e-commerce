@@ -10,11 +10,16 @@
     margin: 0;
     
 }
-
+html{
+    
+    overflow-x: hidden;
+}
 body {
-  overflow-x: hidden;
-  height: 100%;
+    overflow-x: hidden;
+    height: 100%;
     background-color: #000;
+    width: 100%;
+  
 
   
 }
@@ -24,6 +29,9 @@ body {
     position: relative;
     background: #FFAF96;
     height: 618px;
+    width: 100%!important;
+    padding: 0;
+    overflow: hidden!important;
     
 }
 
@@ -122,9 +130,10 @@ h1 span{
 
 
 .heartContainer{
-    transform: rotate(-10deg);
-    margin: 290px 0 0 135px;
+    transform: rotate(-10deg)!important;
+    margin: 290px 0 0 135px!important;
     position: absolute;
+    transform: scale(1)!important;
    
 }
 
@@ -425,6 +434,11 @@ header button:hover{
     font-size: 11px;
     height: 40px;
 }
+@media screen and (max-width:819px) {
+    .heartContainer{
+        transform:scale(1);
+    }
+}
 
 @media screen and (min-width:820px) {
     
@@ -440,24 +454,6 @@ header button:hover{
         
         
     }
-
-    .header--container h1{
-       
-        font-size: 150px;
-       line-height: 120px;
-       margin: 0 0 0 30%;
-    }
-    h1 span{
-        margin: 0 0 0 -43%;
-    }
-    .pilot{
-        height: 500px;
-        margin: 110px 0 0 145px;
-        display: none;
-    }
-
-
-
 
 
 
@@ -579,3 +575,39 @@ header button:hover{
 
   
 }
+@media screen and (min-width:1500px){
+
+    .header--container h1{
+       
+        font-size: 222px;
+        line-height: 164px;
+        margin: 20px 0 0 350px;
+    }   
+    h1 span{
+        margin: 0 0 0 -350px;
+    }
+    .pilot{
+        height: 725px;
+        margin: 130px 0 0 685px;
+        
+    }
+    .star1{
+        transform: scale(2);
+        margin: 0 0 0 280px;
+    }
+    .star2{
+        transform: scale(2);
+        margin: 70px 0 0 230px;
+    }
+    .star3{
+        transform: scale(3);
+        margin: 250px 0 0 1250px;  
+    }
+    
+    }
+    .heartContainer{
+        transform: scale(2.4) rotate(-15deg);
+        margin: 600px 0 0 630px;
+    }
+}
+
