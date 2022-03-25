@@ -77,7 +77,8 @@ color: #FF0000;
 
 
 
-nav p{
+.cartButton{
+    
     font-family: "thunder";
     color: #AF0032;
     font-size: 32px;
@@ -88,6 +89,8 @@ nav p{
     margin-top: 40px;
     letter-spacing: 0.06em;    
 }
+
+
 
 .header__nav img{
     margin-bottom: 20px;
@@ -378,12 +381,10 @@ header button:hover{
     letter-spacing: 0.06em;
    
 }
-.container2__block--2--1:hover + .animationGo{
-   color:#9679D4;
-}
+
 
 .animationGo{
-    border: 1px solid black;
+    
     display: flex;
     position: absolute;
     object-fit: contain;
@@ -433,6 +434,7 @@ header button:hover{
     font-size: 11px;
     height: 40px;
 }
+
 @media screen and (max-width:819px) {
     .heartContainer{
         transform:scale(1);
@@ -449,17 +451,72 @@ header button:hover{
         align-items: center;
         justify-content: center;
     }
+
+    nav{
+        
+        width: 170px!important;
+    }
+    .cartButton{
+
+        margin: 0;
+    }
     .header--container{
         width: 100%;
         margin-top: 20px; 
         
     }
+    .header--top{
+        margin: 0 1%;
+    }
+    .header--container h1{
+       
+        font-size: 160px;
+        line-height: 134px;
+        margin: 20px 0 0 350px;
+    }   
+    
+    h1 span{
+        margin: 0 0 0 -350px;
+    }
+    .pilot{
+        height: 710px;
+        margin: 190px 0 0 545px;
+        
+    }
+    .star1{
+        transform: scale(1.5);
+        margin: -27px 0 0 320px;
+    }
+    .star2{
+        transform: scale(1.5);
+        margin: 30px 0 0 290px;
+    }
+    .star3{
+        transform: scale(2);
+        margin: 250px 0 0 1050px;  
+    }
+    .star4{
+        transform: scale(1.5);
+        margin: 410px 0 0 467px;
+    }
+    .heartContainer{
+       
+        margin: 450px 0 0 530px;
+        transform: scale(2) rotate(-15deg)!important;
+    }
+    button{
+        margin: 530px 0 0 0;
+        width: 242px;
+        height: 55px;
+        font-size: 19px;
+    }
+    
    
     .container1{
    
      height: 623px;
      flex-flow: row nowrap;
-     justify-content: space-around!important;
+     justify-content: space-around;
      width: 100%;
         
     }
@@ -576,6 +633,9 @@ header button:hover{
 
 
 @media screen and (min-width:1500px){
+   
+  
+   
     .header--top{
         margin: 0 1%;
     }
@@ -619,6 +679,16 @@ header button:hover{
         width: 242px;
         height: 55px;
         font-size: 19px;
+    }
+    .container2__block--2 p{
+        font-size: 90px;
+    }
+    
+    .animationGo p{
+        width: 100%;
+        font-size: 302px;
+        margin: -430px 0 0 0px;
+      
     }
 }
 
