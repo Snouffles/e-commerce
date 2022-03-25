@@ -474,7 +474,7 @@ header button:hover{
         line-height: 134px;
         margin: 20px 0 0 350px;
     }   
-    
+
     h1 span{
         margin: 0 0 0 -350px;
     }
@@ -692,3 +692,257 @@ header button:hover{
     }
 }
 
+
+/* CSS PRODUIT */
+
+.containerProduit{
+    background-color: #AF0032;
+   
+}
+.containerProduit ul{
+    display: none;
+}
+.containerProduit p{
+    color: #FFAF96;
+   
+}
+
+
+.logoProduit{
+    height: 70px;
+    margin:0 0 0 10px;
+}
+.header__nav--produit{
+    padding: 0 1.5% 0 0;
+}
+.header__nav--produit{
+    margin: 10px 0 0 0;
+}
+.containerDivider{
+    display: flex;
+    justify-content: flex-end;
+    width: 45%;
+    padding: 0 1% 0 0;
+}
+.menuWide{
+    display: none;
+}
+
+.containerProduit--1{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+}
+.block--1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #AF0032;
+}
+.meet{
+    text-align: center;
+    font-family: "thunder";
+    font-style: normal;
+    font-size: 200px;
+    font-weight: 500;
+    margin: 50px 0 0 0;
+}
+
+.productInfo--Size{
+    
+    align-self :flex-start;
+    font-family: "thunder";
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 96px 0 0 10px;
+}
+
+.productInfo--Values{
+    margin: 0 0 0 10px;
+}
+
+
+.productImage{
+    
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 160px 0 0 0;
+
+}
+.pilotProduit{
+    
+    margin: 0;
+    transform: rotate(0);
+    
+}
+
+.star1--produit{
+ 
+    margin: -140px 0 0 0;
+}
+.star2--produit{
+    transform: scale(1.7);
+    margin: -120px 0 0 320px;
+}
+.star3--produit{
+    margin: 90px 190px 0 0;
+}
+.star4--produit{
+    z-index: 3!important;
+    margin: 160px 0 0 140px;
+}
+
+
+.heartProduit{
+    transform: scale(1.4) rotate(-10deg)!important;
+    position: absolute;
+    margin: 150px 0 0 200px;
+    
+}
+.heartProduit p{
+   
+    color: #FFF;
+    font-family: "thunder";
+    font-style: normal;
+    font-size: 27px;
+    font-weight: 500;
+    margin: -140px 0 0 15px;
+    transform: rotate(12deg);
+}
+
+
+.block--2{
+    width: 100%;
+    height: 100%;
+      
+    background-color: #FFAF96;
+}
+
+@media screen and (min-width:800px){
+    
+    .header--top--Produit{
+        height: 145px;
+    }
+    .logoProduit{
+        height: 106px;
+        margin: 40px 0 0 0;
+    }
+    
+    .containerDivider{
+        background-color: #FFAF96;
+        height: 145px;
+        
+    }
+    .containerDivider p{
+        color:#AF0032
+    }
+    .menuWide{
+        display: block;
+    }
+    .menuSmall{
+        display: none;
+    }
+    .containerProduit--1{
+        height: 888px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .block--1{
+        
+        width: 55%;
+       
+    }
+
+    .meet{
+        text-align: center;
+        font-family: "thunder";
+        font-style: normal;
+        font-size: 412px;
+        font-weight: 500;
+        margin: 30px 0 0 0;
+    }
+    
+    .productInfo--Size{
+        
+        align-self :flex-start;
+        font-family: "thunder";
+        font-style: normal;
+        font-size: 42px;
+        font-weight: 500;
+        margin: 230px 0 0 10px;
+    }
+    
+    .productInfo--Values{
+        margin: 0 0 0 10px;
+        font-size: 22px;
+    }
+    
+    
+    .productImage{
+        
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 30.3%;
+        right: 0;
+        transform: translate(-55%, 0);
+        margin: 520px 0 0 0;
+        width: 55%;
+    
+    
+    }
+    .pilotProduit{
+        height: 604px;
+        margin: -117px 0 0 0;
+        transform: rotate(0);
+        
+    }
+    
+    .star1--produit{
+     
+        margin: -130px 0 0 0;
+    }
+    .star2--produit{
+        transform: scale(1.7);
+        margin: -120px 0 0 320px;
+    }
+    .star3--produit{
+        margin: 90px 190px 0 0;
+    }
+    .star4--produit{
+        
+        margin: 160px 0 0 140px;
+    }
+    
+    
+    .heartProduit{
+        transform: scale(2) rotate(-10deg)!important;
+        position: absolute;
+        margin: 150px 0 0 1200px;
+        
+    }
+    .heartProduit p{
+       
+        color: #FFF;
+        font-family: "thunder";
+        font-style: normal;
+        font-size: 27px;
+        font-weight: 500;
+        margin: -140px 0 0 15px;
+        transform: rotate(12deg);
+    }
+    
+    .block--2{
+      
+        width: 45%;
+    }
+}
